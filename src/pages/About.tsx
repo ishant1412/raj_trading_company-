@@ -1,7 +1,7 @@
 import { Award, Users, Heart, Zap, MessageCircle } from 'lucide-react';
-
+import bhaichara from "../assets/bhaichara.jpg"
 export function About() {
-  const whatsappNumber = '917620844884'; // Replace with actual WhatsApp number
+  const whatsappNumber = '9414751526'; // Replace with actual WhatsApp number
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 
   return (
@@ -130,22 +130,17 @@ export function About() {
           <p className="text-lg mb-6 max-w-2xl mx-auto">
             Our dedicated team is committed to providing you with the best service and support. With years of experience in the trading industry, we understand your needs and strive to exceed your expectations.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            {[
-              { name: 'Raj Kumar', role: 'Founder & CEO', emoji: '👔' },
-              { name: 'tilak Raj', role: 'Operations Manager', emoji: '👩‍💼' },
-             
-            ].map((member, index) => (
-              <div
-                key={index}
-                className="bg-white/20 backdrop-blur-md p-6 rounded-lg hover:bg-white/30 transition-all duration-300 transform hover:scale-105"
-              >
-                <img src="" alt="" />
-                <div className="text-5xl mb-3">{member.emoji}</div>
-                <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                <p className="text-blue-100">{member.role}</p>
-              </div>
-            ))}
+          <div className="flex flex-col justify-center">
+            <div className='flex mx-auto gap-60 text-4xl font-bold' >
+                <h1 className='' >TilakRaj</h1>
+            <h1>
+            Rajkumar
+          </h1>
+            </div>
+            
+           <img src={bhaichara} alt="loading image"
+          className='rounded-xl w-[50%]  mx-auto'/>
+          
           </div>
         </section>
 

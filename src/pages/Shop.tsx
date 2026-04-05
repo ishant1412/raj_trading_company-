@@ -1,7 +1,7 @@
 import { ShoppingCart, MessageCircle } from 'lucide-react';
 
 export function Shop() {
-  const whatsappNumber = '917620844884'; // Replace with actual WhatsApp number
+  const whatsappNumber = '9414751526'; // Replace with actual WhatsApp number
 
   const products = [
     {

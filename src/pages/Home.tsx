@@ -1,26 +1,24 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 import heroImg from '../assets/hero.png';
+import shop from "../assets/shop.png"
+import inside from "../assets/inside.jpeg"
 
-interface HomeProps {
-  setCurrentPage: (page: string) => void;
-}
-
-export function Home({ setCurrentPage }: HomeProps) {
+export function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-      image: heroImg,
+      image: shop,
       title: 'Welcome to Raj Trading',
       subtitle: 'Quality Products at Best Prices',
-      color: 'from-blue-600 to-blue-400',
+     
     },
     {
-      image: heroImg,
+      image: inside,
       title: 'Premium Quality',
       subtitle: 'Best products for your needs',
-      color: 'from-blue-700 to-blue-500',
+     
     },
     {
       image: heroImg,
@@ -60,18 +58,18 @@ export function Home({ setCurrentPage }: HomeProps) {
               }`}
             >
               <div
-                className={`w-full h-full bg-gradient-to-r ${slide.color} flex items-center justify-center relative`}
+                className={`w-full h-full bg-gradient-to-r ${slide.color} flex  items-center pt-20 justify-start relative`}
               >
                 <img
                   src={slide.image}
                   alt={slide.title}
                   className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60"
                 />
-                <div className="relative z-10 text-center text-white px-4 animate-fadeIn">
-                  <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">
+                <div className=" text-start pl-20 text-black px-4 animate-fadeIn">
+                  <h1 className="text-10xl md:text-5xl font-bold mb-4 drop-shadow-lg">
                     {slide.title}
                   </h1>
-                  <p className="text-xl md:text-2xl drop-shadow-md">
+                  <p className="text-2xl md:text-2xl drop-shadow-md">
                     {slide.subtitle}
                   </p>
                 </div>
