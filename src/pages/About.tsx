@@ -131,7 +131,7 @@ export function About() {
             Our dedicated team is committed to providing you with the best service and support. With years of experience in the trading industry, we understand your needs and strive to exceed your expectations.
           </p>
           <div className="flex flex-col justify-center">
-            <div className='flex mx-auto gap-60 text-4xl font-bold' >
+            <div className='flex mx-auto gap-20 text-4xl font-bold' >
                 <h1 className='' >TilakRaj</h1>
             <h1>
             Rajkumar
